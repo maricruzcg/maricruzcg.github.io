@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Livvic', sans-serif;
+}
+.container{
+    width: 100%;
+    /*max-width: 1000px;*/
+    margin: 0px auto;
+}
+
+.row{
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.row:before, .row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.row:after{
+    clear:both; 
+  }
+
+[class*="col-"]{
+    float: left;
+    min-height: 10px;
+    /*gutters*/
+    padding: 12px;
+}
+
+.col-1{width: 8.333333333333332%}
+.col-2{width: 16.666666666666664%}
+.col-3{width: 25%}
+.col-4{width: 33.33333333333333%}
+.col-5{width: 41.66666666666667%}
+.col-6{width: 50%}
+.col-7{width: 58.333333333333336%}
+.col-8{width: 66.66666666666666%}
+.col-9{width: 75%}
+.col-10{width: 83.33333333333334%}
+.col-11{width: 91.66666666666666%}
+.col-12{width: 100%}
+
+.container{
+    background-image: url(img/fondo-bienvenida-01.png);
+    align-content: center;
+    height: 100vh;
+    
+}
+header nav{
+    background: transparent;
+    margin-bottom: 10px;
+  }
+    header nav ul {
+      list-style: none;
+      overflow: hidden;
+    }
+      header nav ul li{
+        display: inline-block;
+        padding-top: 10px;
+      }
+        header nav ul li a{
+          display: block;
+          padding: 10px;
+          color: #141D38;
+          text-decoration: none;
+          font-weight: normal;
+          transition: all 0.4s linear;
+          border-radius: 5px;
+        }
+        header nav ul li a:hover {
+          background: #EDF4FF;
+        }
+.welcome{
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+h1{
+    font-size: 350%;
+    text-align: center;
+    color: rgb(85, 45, 230);
+}
+#study{
+    font-size: 150%;
+    text-align: center;
+    color: rgb(85, 45, 230);
+}
+.textme{
+    margin-top: 15%;
+    margin-bottom: 15%;
+    margin-left: 2%;
+    font-size: 100%;
+}
+.photo{
+    margin-left: 5%;
+    margin-top: 6%;
+}
