@@ -57,14 +57,17 @@
 header nav{
     background: transparent;
     margin-bottom: 10px;
+    
   }
     header nav ul {
+      width: 100%;
       list-style: none;
       overflow: hidden;
     }
       header nav ul li{
         display: inline-block;
         padding-top: 10px;
+        text-align: left;
       }
         header nav ul li a{
           display: block;
@@ -75,9 +78,9 @@ header nav{
           transition: all 0.4s linear;
           border-radius: 5px;
         }
-        header nav ul li a:hover {
+        /* header nav ul li a:hover {
           background: #EDF4FF;
-        }
+        } */
 .welcome{
     margin-top: 10%;
     margin-bottom: 20%;
@@ -101,4 +104,7 @@ h1{
 .photo{
     margin-left: 5%;
     margin-top: 6%;
+}
+#navbar{
+  width: 50%;
 }
