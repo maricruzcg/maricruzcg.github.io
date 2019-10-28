@@ -2,13 +2,61 @@
     box-sizing: border-box;
     margin:0;
     padding: 0;
-    font-family: 'Livvic', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+/* Hamburger Menu */
+
+.mcbutton{
+  position: fixed;
+  top: 12%;
+  left: 92%;
+  margin-left: -22px;
+  margin-top: -22px;
+  width: 10px;
+  height: 15px;
+  cursor: pointer;
+  z-index: 4;
+}
+.mcbutton b {
+  position: absolute;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: rgb(85, 45, 230);
+}
+.mcbutton b:nth-child(1){
+  top: 0;
+}
+.mcbutton b:nth-child(2){
+  top: 50%;
+}
+.mcbutton b:nth-child(3){
+  top: 100%;
+}
+
+/* Elementos del menu */
+.menu-items{
+  position: fixed;
+  background-color: rgba(255, 255, 255, .9);
+  z-index: 3;
+  top: -100vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 3s;
+}
+.menu.is-active{
+  top: 0;
 }
 .container{
     width: 100%;
     /*max-width: 1000px;*/
     margin: 0px auto;
 }
+
 
 .row{
     margin: auto;
@@ -54,20 +102,21 @@
     height: 100vh;
     
 }
-header nav{
+/* header nav{
     background: transparent;
     margin-bottom: 10px;
     
-  }
+  } */
     header nav ul {
       width: 100%;
       list-style: none;
       overflow: hidden;
     }
       header nav ul li{
-        display: inline-block;
-        padding-top: 10px;
-        text-align: left;
+        display: block;
+        padding-top: 40px;
+        text-align: center;
+        font-size: 130%;
       }
         header nav ul li a{
           display: block;
@@ -82,13 +131,15 @@ header nav{
           background: #EDF4FF;
         } */
 .welcome{
-    margin-top: 10%;
+    margin-top: 20%;
     margin-bottom: 20%;
 }
 h1{
-    font-size: 350%;
+    font-size: 500%;
+    font-weight: 100;
     text-align: center;
     color: rgb(85, 45, 230);
+    font-family: 'Great Vibes', cursive;
 }
 #study{
     font-size: 150%;
