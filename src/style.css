@@ -37,7 +37,7 @@
 /* Elementos del menu */
 .menu-items{
   position: fixed;
-  background-color: rgba(255, 255, 255, .9);
+  background-color: rgb(255, 255, 255);
   z-index: 3;
   top: -100vh;
   left: 0;
@@ -46,9 +46,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 3s;
+  transition: 1s;
 }
-.menu.is-active{
+.menu-items.is-active{
   top: 0;
 }
 .container{
