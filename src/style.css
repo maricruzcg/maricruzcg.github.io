@@ -89,7 +89,7 @@
   text-align: center;
   align-content: center;
   justify-content: center;
-  padding: 5%;
+  /* padding: 5%; */
   height: 100vh;
   /* background: coral; */
 }
@@ -99,31 +99,60 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding: 2%;
+  padding: 1%;
   /* background: crimson; */
 }
 .container .photo{
   grid-area: photo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /* background: cornflowerblue; */
 }
 .container .greeting{
   grid-area: greeting;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(42, 203, 204);
   /* background: darkgreen; */
+  font-size: 450%;
+  font-weight: 100;
+  font-family: 'Great Vibes', cursive;
 }
 .container .text-me{
   grid-area: text-me;
+  /* display: inline-flex; */
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  /* background: chartreuse; */
 }
 .container .phrase{
   grid-area: phrase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 150%;
+  font-family: 'Great Vibes', cursive;
 }
 .container .t-skills{
   grid-area: t-skills;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .container .s-skills{
   grid-area: s-skills;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .container .interests{
   grid-area: interests;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .container .title2{
   grid-area: title2;
