@@ -1,10 +1,9 @@
 *{
-    box-sizing: border-box;
     margin:0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
 }
-/* Hamburger Menu */
+/* -------------------------------Hamburger Menu -------------------------------------*/
 
 .mcbutton{
   position: fixed;
@@ -22,7 +21,7 @@
   left: 0;
   width: 25px;
   height: 2px;
-  background-color: rgb(85, 45, 230);
+  background-color: rgb(102, 57, 201);
 }
 .mcbutton b:nth-child(1){
   top: 0;
@@ -34,7 +33,7 @@
   top: 100%;
 }
 
-/* Elementos del menu */
+/* ---------------------------------------------Elementos del menu -----------------------------*/
 .menu-items{
   position: fixed;
   background-color: rgb(255, 255, 255);
@@ -46,62 +45,161 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 1s;
+  transition: .5s;
 }
 .menu-items.is-active{
   top: 0;
 }
+/* ----------------------------Grid Css---------------------------- */
 .container{
-    width: 100%;
-    /*max-width: 1000px;*/
-    margin: 0px auto;
-}
+  width: 100%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(9, auto);
+  grid-template-areas: "header    header    header    header    header    header"
+                        "welcome  welcome   welcome   welcome   welcome   welcome"
+                        "title1   title1    title1    title1    title1    title1"
+                        "photo    photo     photo     greeting  greeting  greeting"
+                        "photo    photo     photo     text-me   text-me   text-me"
+                        "photo    photo     photo     text-me   text-me   text-me"
+                        "phrase   phrase    phrase    phrase    phrase    phrase"
+                        "t-skills t-skills  s-skills  s-skills  interests interests"
+                        "title2   title2    title2    title2    title2    title2"
+                        "proyect1 proyect1  proyect2  proyect2  proyect3  proyect3"
+                        "footer   footer    footer    footer    footer    footer";
 
-
-.row{
-    margin: auto;
-    width: 100%;
-    height: auto;
-}
-
-.row:before, .row:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-.row:after{
-    clear:both; 
-  }
-
-[class*="col-"]{
-    float: left;
-    min-height: 10px;
-    /*gutters*/
-    padding: 12px;
-}
-
-.col-1{width: 8.333333333333332%}
-.col-2{width: 16.666666666666664%}
-.col-3{width: 25%}
-.col-4{width: 33.33333333333333%}
-.col-5{width: 41.66666666666667%}
-.col-6{width: 50%}
-.col-7{width: 58.333333333333336%}
-.col-8{width: 66.66666666666666%}
-.col-9{width: 75%}
-.col-10{width: 83.33333333333334%}
-.col-11{width: 91.66666666666666%}
-.col-12{width: 100%}
-
-.container{
-    background-image: url(img/fondo-bienvenida-01.png);
-    /* align-content: center; */
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
+  background-image: url(img/fondo-bienvenida-01.png);
+  /* align-content: center; */
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
     
 }
+.container .header{
+  /* background: black; */
+  grid-area: header;
+  /* padding: 3%; */
+}
+
+.container .welcome {
+  grid-area: welcome;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  padding: 5%;
+  height: 100vh;
+  /* background: coral; */
+}
+.container .title1{
+  grid-area: title1;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  /* background: crimson; */
+}
+.container .photo{
+  grid-area: photo;
+  /* background: cornflowerblue; */
+}
+.container .greeting{
+  grid-area: greeting;
+  /* background: darkgreen; */
+}
+.container .text-me{
+  grid-area: text-me;
+}
+.container .phrase{
+  grid-area: phrase;
+}
+.container .t-skills{
+  grid-area: t-skills;
+}
+.container .s-skills{
+  grid-area: s-skills;
+}
+.container .interests{
+  grid-area: interests;
+}
+.container .title2{
+  grid-area: title2;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  /* background: crimson; */
+}
+.container .interests{
+  grid-area: interests;
+}
+.container .proyect1{
+  grid-area: proyect1;
+}
+.container .proyect2{
+  grid-area: proyect2;
+}
+.container .proyect3{
+  grid-area: proyect3;
+}
+.container .footer{
+  grid-area: footer;
+}
+/* -----------------Estilos desktop -----------*/
+h1{
+  font-size: 580%;
+  font-weight: 100;
+  color: rgb(102, 57, 201);
+  font-family: 'Great Vibes', cursive;
+}
+#study{
+  font-size: 160%;
+  text-align: center;
+  color: rgb(102, 57, 201);
+}
+.textme{
+  font-size: 100%;
+}
+
+/* ------------------media queries---------------------- */
+
+@media screen and (max-width: 736px){
+  .container{
+    background-position: left;
+    grid-template-areas: "header    header    header  header    header    header"
+                        "welcome  welcome   welcome welcome  welcome   welcome"
+                        "title1   title1    title1  title1   title1    title1"
+                        "greeting  greeting  greeting greeting  greeting  greeting"
+                        "photo    photo     photo photo    photo     photo"
+                        "phrase   phrase    phrase  phrase   phrase    phrase"
+                        "text-me   text-me   text-me  text-me   text-me   text-me"
+                        "t-skills t-skills    t-skills  t-skills t-skills    t-skills"  
+                        "s-skills  s-skills   s-skills  s-skills  s-skills   s-skills"  
+                        "interests interests  interests interests interests  interests"
+                        "title2   title2    title2  title2   title2    title2"
+                        "proyect1 proyect1  proyect1 proyect1 proyect1 proyect1"  
+                        "proyect2  proyect2 proyect2  proyect2  proyect2  proyect2"
+                        "proyect3  proyect3 proyect3  proyect3  proyect3  proyect3"
+                        "footer   footer    footer    footer    footer    footer";
+
+  }
+  h1{
+    font-size: 400%;
+    font-weight: 100;
+    color: rgb(102, 57, 201);
+    font-family: 'Great Vibes', cursive;
+  }
+  #study{
+    font-size: 120%;
+    text-align: center;
+    color: rgb(102, 57, 201);
+  }
+}
+/* ----------------------------Estilos menu ---------------------------------*/
 /* header nav{
     background: transparent;
     margin-bottom: 10px;
@@ -113,13 +211,13 @@
       overflow: hidden;
     }
       header nav ul li{
-        display: block;
+        /* display: block; */
         padding-top: 40px;
         text-align: center;
         font-size: 130%;
       }
         header nav ul li a{
-          display: block;
+          /* display: block; */
           padding: 10px;
           color: #141D38;
           text-decoration: none;
@@ -130,32 +228,3 @@
         /* header nav ul li a:hover {
           background: #EDF4FF;
         } */
-.welcome{
-    margin-top: 20%;
-    margin-bottom: 20%;
-}
-h1{
-    font-size: 500%;
-    font-weight: 100;
-    text-align: center;
-    color: rgb(85, 45, 230);
-    font-family: 'Great Vibes', cursive;
-}
-#study{
-    font-size: 150%;
-    text-align: center;
-    color: rgb(85, 45, 230);
-}
-.textme{
-    margin-top: 15%;
-    margin-bottom: 15%;
-    margin-left: 2%;
-    font-size: 100%;
-}
-.photo{
-    margin-left: 5%;
-    margin-top: 6%;
-}
-#navbar{
-  width: 50%;
-}
