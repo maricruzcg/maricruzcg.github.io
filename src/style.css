@@ -54,22 +54,21 @@
 .container{
   width: 100%;
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(9, auto);
-  grid-template-areas: "header    header    header    header    header    header"
-                        "welcome  welcome   welcome   welcome   welcome   welcome"
-                        "title1   title1    title1    title1    title1    title1"
-                        "photo    photo     photo     greeting  greeting  greeting"
-                        "photo    photo     photo     text-me   text-me   text-me"
-                        "photo    photo     photo     text-me   text-me   text-me"
-                        "phrase   phrase    phrase    phrase    phrase    phrase"
-                        "t-skills t-skills  s-skills  s-skills  interests interests"
-                        "title2   title2    title2    title2    title2    title2"
-                        "proyect1 proyect1  proyect2  proyect2  proyect3  proyect3"
-                        "footer   footer    footer    footer    footer    footer";
+  grid-template-areas: "header    header    header"
+                        "welcome  welcome   welcome"
+                        "title1   title1    title1"
+                        "photo     greeting  greeting"
+                        "photo    text-me   text-me"
+                        "phrase   phrase    phrase"
+                        "web       design  s-skills"
+                        "title2   title2    title2"
+                        "proyect1 proyect2  proyect3"
+                        "footer   footer    footer";
 
-  background-image: url(img/fondo-bienvenida-01.png);
+  background-image: url(img/fondo-bienvenida-new.png);
   /* align-content: center; */
   background-position: center;
   background-attachment: fixed;
@@ -99,14 +98,20 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding: 1%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  color: rgb(127, 124, 199);
+  font-weight: 250;
+  font-size: 180%;
   /* background: crimson; */
 }
 .container .photo{
   grid-area: photo;
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
+  /* width: 60%; */
   /* background: cornflowerblue; */
 }
 .container .greeting{
@@ -114,9 +119,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(42, 203, 204);
+  color: rgb(116, 118, 119);
   /* background: darkgreen; */
-  font-size: 450%;
+  font-size: 350%;
   font-weight: 100;
   font-family: 'Great Vibes', cursive;
 }
@@ -125,7 +130,7 @@
   /* display: inline-flex; */
   align-items: center;
   justify-content: center;
-  padding: 5%;
+  padding: 15%;
   /* background: chartreuse; */
 }
 .container .phrase{
@@ -136,20 +141,21 @@
   font-weight: 150%;
   font-family: 'Great Vibes', cursive;
 }
-.container .t-skills{
-  grid-area: t-skills;
+.container .web{
+  grid-area: web;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.container .design{
+  grid-area: design;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .container .s-skills{
   grid-area: s-skills;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.container .interests{
-  grid-area: interests;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,9 +168,6 @@
   justify-content: center;
   padding: 2%;
   /* background: crimson; */
-}
-.container .interests{
-  grid-area: interests;
 }
 .container .proyect1{
   grid-area: proyect1;
@@ -199,21 +202,21 @@ h1{
 @media screen and (max-width: 736px){
   .container{
     background-position: left;
-    grid-template-areas: "header    header    header  header    header    header"
-                        "welcome  welcome   welcome welcome  welcome   welcome"
-                        "title1   title1    title1  title1   title1    title1"
-                        "greeting  greeting  greeting greeting  greeting  greeting"
-                        "photo    photo     photo photo    photo     photo"
-                        "phrase   phrase    phrase  phrase   phrase    phrase"
-                        "text-me   text-me   text-me  text-me   text-me   text-me"
-                        "t-skills t-skills    t-skills  t-skills t-skills    t-skills"  
-                        "s-skills  s-skills   s-skills  s-skills  s-skills   s-skills"  
-                        "interests interests  interests interests interests  interests"
-                        "title2   title2    title2  title2   title2    title2"
-                        "proyect1 proyect1  proyect1 proyect1 proyect1 proyect1"  
-                        "proyect2  proyect2 proyect2  proyect2  proyect2  proyect2"
-                        "proyect3  proyect3 proyect3  proyect3  proyect3  proyect3"
-                        "footer   footer    footer    footer    footer    footer";
+    grid-template-areas:"header     header      header"
+                        "welcome    welcome     welcome"
+                        "title1     title1      title1"
+                        "greeting   greeting    greeting"
+                        "photo      photo       photo"
+                        "phrase     phrase      phrase"
+                        "text-me    text-me     text-me"
+                        "t-skills   t-skills    t-skills"  
+                        "s-skills   s-skills    s-skills"  
+                        "interests  interests   interests"
+                        "title2     title2      title2"
+                        "proyect1   proyect1    proyect1"  
+                        "proyect2   proyect2    proyect2"
+                        "proyect3   proyect3    proyect3"
+                        "footer     footer      footer";
 
   }
   h1{
