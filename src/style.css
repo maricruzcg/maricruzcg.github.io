@@ -101,7 +101,7 @@
   padding-top: 4%;
   padding-bottom: 4%;
   color: rgb(127, 124, 199);
-  font-weight: 250;
+  font-weight: 570;
   font-size: 180%;
   /* background: crimson; */
 }
@@ -121,7 +121,7 @@
   justify-content: center;
   color: rgb(116, 118, 119);
   /* background: darkgreen; */
-  font-size: 350%;
+  font-size: 280%;
   font-weight: 100;
   font-family: 'Great Vibes', cursive;
 }
@@ -130,16 +130,27 @@
   /* display: inline-flex; */
   align-items: center;
   justify-content: center;
-  padding: 15%;
+  padding-right: 15%;
+  padding-left: 15%;
+  color: rgb(65, 66, 66);
   /* background: chartreuse; */
+}
+#cv{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 .container .phrase{
   grid-area: phrase;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 150%;
+  font-size: 150%;
   font-family: 'Great Vibes', cursive;
+  color: rgb(65, 66, 66);color: rgb(65, 66, 66);
+  padding: 5%;
+
 }
 .container .web{
   grid-area: web;
