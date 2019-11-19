@@ -60,15 +60,17 @@
   grid-template-areas: "header    header    header"
                         "welcome  welcome   welcome"
                         "title1   title1    title1"
+                        "phrase   phrase    phrase"
                         "photo     greeting  greeting"
                         "photo    text-me   text-me"
-                        "phrase   phrase    phrase"
-                        "web       design  s-skills"
+                        "photo    cv        cv"
                         "title2   title2    title2"
+                        "web       design      s-skills"
+                        "title3   title3    title3"
                         "proyect1 proyect2  proyect3"
                         "footer   footer    footer";
 
-  background-image: url(img/fondo-bienvenida-new.png);
+  background-image: url(assets/img/fondo-bienvenida-new.png);
   /* align-content: center; */
   background-position: center;
   background-attachment: fixed;
@@ -100,8 +102,8 @@
   justify-content: center;
   padding-top: 4%;
   padding-bottom: 4%;
-  color: rgb(127, 124, 199);
-  font-weight: 570;
+  color: rgb(102, 57, 201);;
+  font-weight: 400;
   font-size: 180%;
   /* background: crimson; */
 }
@@ -111,6 +113,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
+  padding-left: 10%;
   /* width: 60%; */
   /* background: cornflowerblue; */
 }
@@ -119,11 +122,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(116, 118, 119);
+  color: rgb(152, 197, 231);
   /* background: darkgreen; */
-  font-size: 280%;
-  font-weight: 100;
-  font-family: 'Great Vibes', cursive;
+  font-size: 180%;
+  font-weight: 500;
 }
 .container .text-me{
   grid-area: text-me;
@@ -132,14 +134,32 @@
   justify-content: center;
   padding-right: 15%;
   padding-left: 15%;
-  color: rgb(65, 66, 66);
+  color: rgb(114, 114, 114);
+  font-size: 105%;
   /* background: chartreuse; */
 }
-#cv{
+.container .cv{
+  grid-area: cv;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
   justify-content: center;
+  color: rgb(114, 114, 114);
+  background-color: #ffffff;
+  border: 1px solid rgb(152, 197, 231);
+  height: 50%;
+  width: 15%;
+  text-decoration: none;
+  font-size: 90%;
+  border-radius: 2px;
+}
+.cv:hover{
+  transform: scale(1.15);
+  border: 0px;
+  /* background-color: rgb(152, 197, 231); */
+  color:rgb(152, 197, 231);
+  cursor: pointer;
 }
 .container .phrase{
   grid-area: phrase;
@@ -148,28 +168,10 @@
   justify-content: center;
   font-size: 150%;
   font-family: 'Great Vibes', cursive;
-  color: rgb(65, 66, 66);color: rgb(65, 66, 66);
-  padding: 5%;
+  color: rgb(114, 114, 114);
+  padding: 3%;
+  font-style: italic;
 
-}
-.container .web{
-  grid-area: web;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-.container .design{
-  grid-area: design;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.container .s-skills{
-  grid-area: s-skills;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .container .title2{
   grid-area: title2;
@@ -177,7 +179,57 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding: 2%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  color: rgb(102, 57, 201);;
+  font-weight: 400;
+  font-size: 180%;
+  /* background: crimson; */
+}
+.container .web{
+  grid-area: web;
+  text-align: center;
+
+}
+.container .design{
+  grid-area: design;
+  text-align: center;
+}
+.container .s-skills{
+  grid-area: s-skills;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:rgb(114, 114, 114);
+  font-kerning: normal;
+  text-decoration: none;
+}
+.subtitle {
+  color: rgb(114, 114, 114);
+  font-size: 130%;
+  padding: 5%;
+  
+}
+.web:hover {
+  color: rgb(102, 57, 201);;
+}
+.icons {
+  width: 23%;
+}
+.icons-design {
+  width: 31%;
+}
+.container .title3{
+  grid-area: title3;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  color: rgb(102, 57, 201);;
+  font-weight: 400;
+  font-size: 180%;
   /* background: crimson; */
 }
 .container .proyect1{
@@ -202,28 +254,27 @@ h1{
 #study{
   font-size: 160%;
   text-align: center;
+  font-weight: 550;
   color: rgb(102, 57, 201);
-}
-.textme{
-  font-size: 100%;
 }
 
 /* ------------------media queries---------------------- */
 
-@media screen and (max-width: 736px){
+@media screen and (max-width: 768px){
   .container{
     background-position: left;
     grid-template-areas:"header     header      header"
                         "welcome    welcome     welcome"
                         "title1     title1      title1"
-                        "greeting   greeting    greeting"
                         "photo      photo       photo"
+                        "greeting   greeting    greeting"
                         "phrase     phrase      phrase"
                         "text-me    text-me     text-me"
-                        "t-skills   t-skills    t-skills"  
-                        "s-skills   s-skills    s-skills"  
-                        "interests  interests   interests"
-                        "title2     title2      title2"
+                        "cv    cv     cv"
+                        "title2   title2    title2"
+                        "web       web  design"   
+                        "s-skills  s-skills   s-skills"
+                        "title3     title3      title3"
                         "proyect1   proyect1    proyect1"  
                         "proyect2   proyect2    proyect2"
                         "proyect3   proyect3    proyect3"
