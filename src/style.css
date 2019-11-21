@@ -67,7 +67,10 @@
                         "title2   title2    title2"
                         "web       design      s-skills"
                         "title3   title3    title3"
-                        "proyect1 proyect2  proyect3"
+                        "proyect1 proyect1  info-poke"
+                        "info-mesereando proyect2 proyect2"
+                        "proyect3 proyect3  info-fitclub"
+                        "info-weencrypt proyect4 proyect4"
                         "footer   footer    footer";
 
   background-image: url(assets/img/fondo-bienvenida-new.png);
@@ -213,12 +216,12 @@
 .web:hover {
   color: rgb(102, 57, 201);;
 }
-.icons {
+/* .icons {
   width: 23%;
 }
 .icons-design {
   width: 31%;
-}
+} */
 .container .title3{
   grid-area: title3;
   display: flex;
@@ -227,22 +230,157 @@
   justify-content: center;
   padding-top: 4%;
   padding-bottom: 4%;
-  color: rgb(102, 57, 201);;
+  color: rgb(102, 57, 201);
   font-weight: 400;
   font-size: 180%;
   /* background: crimson; */
 }
 .container .proyect1{
   grid-area: proyect1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.photo-proyect {
+  height: 100vh;
+  padding: 5%;
+}
+.container .info-poke{
+  grid-area: info-poke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4%;
+  padding-right: 20%;
+  color: rgb(114, 114, 114);
+  font-size: 105%;
+}
+.title-proyects {
+  color: rgb(152, 197, 231);
+  font-size: 180%;
+  font-weight: 500;
+  padding-bottom: 2%;
+}
+.website {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: rgb(114, 114, 114);
+  background-color: #ffffff;
+  border: 1px solid rgb(152, 197, 231);
+  padding: 2%;
+  margin-top: 10%;
+  width: 30%;
+  text-decoration: none;
+  font-size: 90%;
+  border-radius: 2px;
+}
+.website:hover{
+  transform: scale(1.15);
+  border: 0px;
+  /* background-color: rgb(152, 197, 231); */
+  color:rgb(152, 197, 231);
+  cursor: pointer;
+}
+.code {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: rgb(114, 114, 114);
+  background-color: #ffffff;
+  border: 1px solid rgb(152, 197, 231);
+  padding: 2%;
+  margin-top: 10%;
+  width: 30%;
+  text-decoration: none;
+  font-size: 90%;
+  border-radius: 2px;
+}
+.code:hover{
+  transform: scale(1.15);
+  border: 0px;
+  /* background-color: rgb(152, 197, 231); */
+  color:rgb(152, 197, 231);
+  cursor: pointer;
 }
 .container .proyect2{
   grid-area: proyect2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container .info-mesereando{
+  grid-area: info-mesereando;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4%;
+  padding-left: 20%;
+  color: rgb(114, 114, 114);
+  font-size: 105%;
+}
+.container .proyect2{
+  grid-area: proyect2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container .info-redsocial{
+  grid-area: info-redsocial;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4%;
+  padding-left: 20%;
+  color: rgb(114, 114, 114);
+  font-size: 105%;
 }
 .container .proyect3{
   grid-area: proyect3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container .info-fitclub{
+  grid-area: info-fitclub;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4%;
+  color: rgb(114, 114, 114);
+  font-size: 105%;
+}
+.container .proyect4{
+  grid-area: proyect4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container .info-weencrypt{
+  grid-area: info-weencrypt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4%;
+  padding-left: 20%;
+  color: rgb(114, 114, 114);
+  font-size: 105%;
 }
 .container .footer{
   grid-area: footer;
+  background-color: rgb(102, 57, 201);
+  height: 15vw;
+  display: flex;
+  justify-content: center;
 }
 /* -----------------Estilos desktop -----------*/
 h1{
