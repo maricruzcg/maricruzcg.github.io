@@ -74,8 +74,7 @@
                         "img-footer         img-footer          img-footer"
                         "footer             footer              footer";
 
-  background-image: url(assets/img/fondo-bienvenida-01.png),
-  url(assets/img/fondo-bienvenida-new.png);
+  background-image: url(img-css/fondo-bienvenida-01.png);
   /* align-content: center; */
   background-position: center;
   background-attachment: fixed;
@@ -198,7 +197,7 @@
 .container .web{
   grid-area: web;
   text-align: center;
-  padding: 2% 10% 0 10%;
+  padding: 2% 10% 8% 10%;
   /* background-color: rgb(230, 105, 177); */
   
   background: rgb(255, 153, 201);
