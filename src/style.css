@@ -177,7 +177,7 @@
   justify-content: center;
   font-size: 150%;
   font-family: 'Great Vibes', cursive;
-  color: rgb(114, 114, 114);
+  color: rgb(161, 161, 161);
   padding: 6%;
   font-style: italic;
 }
@@ -199,7 +199,7 @@
   text-align: center;
   padding: 2% 10% 0 10%;
   background-color: rgb(255, 70, 193);
-  height: 60vh;
+  height: 85vh;
 }
 
 .container .s-skills{
@@ -215,7 +215,7 @@
 .subtitle-tech {
   color: rgb(255, 255, 255);
   font-size: 250%;
-  padding: 5%;
+  padding: 2%;
   
 }
 .subtitle {
@@ -416,26 +416,26 @@ h1{
   color: rgb(102, 57, 201);
 }
 
-/* ------------------media queries---------------------- */
+/* ------------------media queries tablet---------------------- */
 
 @media screen and (max-width: 768px){
   .container{
     background-position: left;
-    grid-template-areas:"header         header         header"
-                        "welcome        welcome        welcome"
-                        "title1         title1         title1"
-                        "photo         phrase         phrase"
-                        "photo       greeting       greeting"
-                        "photo        text-me        text-me"
-                        "title2         title2         title2"
-                        "web            web            web"   
-                        "s-skills       s-skills       s-skills"
-                        "title3         title3         title3"
-                        "proyect1       info-poke       info-poke"
-                        "info-mesereando info-mesereando  proyect2"
-                        "proyect3       proyect3       info-fitclub"
-                        "info-weencrypt      proyect4       proyect4"
-                        "footer         footer         footer";
+    grid-template-areas:"header             header            header"
+                        "welcome            welcome           welcome"
+                        "title1             title1            title1"
+                        "photo              phrase            phrase"
+                        "photo              greeting          greeting"
+                        "photo              text-me           text-me"
+                        "title2             title2            title2"
+                        "web                web               web"   
+                        "s-skills           s-skills          s-skills"
+                        "title3             title3            title3"
+                        "proyect1           info-poke         info-poke"
+                        "info-mesereando    info-mesereando   proyect2"
+                        "proyect3           proyect3          info-fitclub"
+                        "info-weencrypt     proyect4          proyect4"
+                        "footer             footer            footer";
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -444,13 +444,10 @@ h1{
   h1{
     font-size: 500%;
     font-weight: 100;
-    color: rgb(102, 57, 201);
-    font-family: 'Great Vibes', cursive;
   }
   #study{
     font-size: 170%;
     text-align: center;
-    color: rgb(102, 57, 201);
   }
   .container .title1{
     font-weight: 500;
@@ -480,7 +477,6 @@ h1{
   }
   .container .phrase{
     font-size: 130%;
-    color: rgb(255, 70, 193);
   }
   .container .title2{
     font-weight: 500;
@@ -522,6 +518,140 @@ h1{
   .name-footer {
     font-size: 200%;
     padding-bottom: 5%;
+  }
+}
+/* ------------------media queries phone---------------------- */
+
+@media screen and (max-width: 550px){
+  .container{
+    background-position: left;
+    grid-template-areas:"header             header            header"
+                        "welcome            welcome           welcome"
+                        "title1             title1            title1"
+                        "photo              photo             photo"
+                        "greeting              greeting          greeting"
+                        "phrase              phrase            phrase"
+                        "text-me              text-me           text-me"
+                        "title2             title2            title2"
+                        "web                web               web"   
+                        "s-skills           s-skills          s-skills"
+                        "title3             title3            title3"
+                        "proyect1           proyect1          proyect1"
+                        "info-poke           info-poke         info-poke"
+                        "proyect2           proyect2          proyect2"
+                        "info-mesereando    info-mesereando   info-mesereando"
+                        "proyect3           proyect3          proyect3"
+                        "info-fitclub       info-fitclub      info-fitclub"
+                        "proyect4           proyect4          proyect4"
+                        "info-weencrypt     info-weencrypt    info-weencrypt"
+                        "footer             footer            footer";
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+  }
+  h1{
+    font-size: 280%;
+    font-weight: 100;
+  }
+  #study{
+    font-size: 130%;
+    padding: 0 5% 0 5%;
+  }
+  .container .title1{
+    font-size: 140%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .container .photo{
+    padding-left: 10%;
+    padding-bottom: 0%;
+  }
+  .container .text-me{
+    padding-bottom: 25%;
+  }
+  .photo-perfil {
+    width: 50%;
+  }
+  .container .greeting{
+    font-size: 150%;
+    padding-top: 2%;
+    padding-bottom: 4%;
+  }
+  .cv{
+    padding: 2%;
+    margin-top: 8%;
+    width: 35%;
+  }
+  .container .phrase{
+    font-size: 120%;
+    padding: 5%;
+  }
+  .container .title2{
+    font-size: 140%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+  }
+  .subtitle-tech {
+    font-size: 180%;
+    padding: 5%;
+  }
+  .icons {
+    width: 26%;
+  }
+  .container .web{
+    padding: 2% 10% 7% 10%;
+    background-color: rgb(255, 70, 193);
+    height: 70vh;
+  }
+  .container .s-skills{
+    height: 50vh;
+  }
+  .container .title3{
+    font-size: 140%;
+    padding-top: 10%;
+    padding-bottom: 15%;
+  }
+  .photo-proyect {
+    height: 45vh;
+    padding: 5%;
+  }
+  .title-proyects {
+    font-size: 190%;
+  }
+  .container .info-poke{
+    padding: 7%;
+    background: rgb(255, 245, 252);
+  }
+  .container .proyect2{
+    background: rgb(255, 255, 255);
+  }
+  .container .info-mesereando{
+    padding: 7%;
+    background: rgb(255, 245, 252);
+  }
+    .container .info-fitclub{
+    padding: 7%;
+    background: rgb(255, 245, 252);
+  }
+  .container .proyect4{
+    background: rgb(255, 255, 255);
+  }
+  .container .info-weencrypt{
+    padding: 7%;
+    background: rgb(255, 245, 252);
+  }
+  .container .footer{
+    height: 35vw;
+    padding: 5%;
+  
+  }
+  .name-footer {
+    font-size: 150%;
+    padding-bottom: 5%;
+  }
+  .text-service {
+    font-size: 90%;
   }
 }
 /* ----------------------------Estilos menu ---------------------------------*/
