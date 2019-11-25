@@ -71,9 +71,11 @@
                         "info-mesereando    proyect2            proyect2"
                         "proyect3           proyect3            info-fitclub"
                         "info-weencrypt     proyect4            proyect4"
+                        "img-footer         img-footer          img-footer"
                         "footer             footer              footer";
 
-  background-image: url(assets/img/fondo-bienvenida-01.png);
+  background-image: url(assets/img/fondo-bienvenida-01.png),
+  url(assets/img/fondo-bienvenida-new.png);
   /* align-content: center; */
   background-position: center;
   background-attachment: fixed;
@@ -192,30 +194,28 @@
   color: rgb(102, 57, 201);
   font-weight: 500;
   font-size: 230%;
-  background: rgb(255, 70, 193);
 }
 .container .web{
   grid-area: web;
   text-align: center;
   padding: 2% 10% 0 10%;
-  background-color: rgb(255, 70, 193);
-  height: 85vh;
+  /* background-color: rgb(230, 105, 177); */
+  
+  background: rgb(255, 153, 201);
 }
 
 .container .s-skills{
   grid-area: s-skills;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color:rgb(114, 114, 114);
-  font-kerning: normal;
-  text-decoration: none;
-  height: 50vh;
+  text-align: center;
+  
+  padding: 2% 10% 0 10%;
+  
 }
+
 .subtitle-tech {
   color: rgb(255, 255, 255);
-  font-size: 250%;
-  padding: 2%;
+  font-size: 130%;
+  padding: 5%;
   
 }
 .subtitle {
@@ -225,7 +225,7 @@
   
 }
 .icons {
-  padding: 3%;
+  padding: 2%;
 }
 .container .title3{
   grid-area: title3;
@@ -299,7 +299,6 @@
 .proyect-tools {
   padding-left: 4%;
   /* color: rgb(102, 57, 201); */
-  /* list-style-image: ; */
 }
 .container .proyect1{
   grid-area: proyect1;
@@ -372,6 +371,16 @@
   font-size: 105%;
   background: rgb(253, 238, 249);
 }
+.container .img-footer{
+  grid-area: img-footer;
+  display: flex;
+  
+  justify-content: end;
+  text-align: center;
+}
+.lines{
+  width: 100vw;
+}
 .container .footer{
   grid-area: footer;
   background-color: rgb(102, 57, 201);
@@ -382,17 +391,28 @@
   overflow: hidden;
   text-decoration: none;
   padding: 5%;
+  padding-bottom: 10%;
 
 }
 .icons-contact {
-  display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
-  color: #ffffff;
-  list-style: none;
-  justify-items: center;
-  padding: 3%;
+  padding: 5%;
+}
+.icons-contact-web {
+  width: 30px;
+  padding: 1%;
+}
+.icons-contact-social {
+  width: 50px;
+  padding: 2%;
+}
+.mail-phone{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top: 3%;
 }
 .name-footer {
   color: rgb(255, 255, 255);
@@ -401,6 +421,7 @@
 }
 .text-service {
   color: #ffffff;
+  font-weight: bold;
 }
 /* -----------------Estilos desktop -----------*/
 h1{
@@ -433,8 +454,9 @@ h1{
                         "title3             title3            title3"
                         "proyect1           info-poke         info-poke"
                         "info-mesereando    info-mesereando   proyect2"
-                        "proyect3           proyect3          info-fitclub"
-                        "info-weencrypt     proyect4          proyect4"
+                        "proyect3           info-fitclub      info-fitclub"
+                        "info-weencrypt     info-weencrypt    proyect4"
+                        "img-footer         img-footer          img-footer"
                         "footer             footer            footer";
     background-position: center;
     background-attachment: fixed;
@@ -484,22 +506,10 @@ h1{
     padding-top: 10%;
     padding-bottom: 5%;
   }
-  .subtitle-tech {
-    color: rgb(255, 255, 255);
-    font-size: 210%;
-    padding: 5%;
-    
+  .icons {
+    width: 25%;
   }
-  .container .web{
-    grid-area: web;
-    text-align: center;
-    padding: 2% 10% 7% 10%;
-    background-color: rgb(255, 70, 193);
-    height: 60vh;
-  }
-  .container .s-skills{
-    height: 50vh;
-  }
+
   .container .title3{
     font-weight: 500;
     font-size: 180%;
@@ -544,6 +554,7 @@ h1{
                         "info-fitclub       info-fitclub      info-fitclub"
                         "proyect4           proyect4          proyect4"
                         "info-weencrypt     info-weencrypt    info-weencrypt"
+                        "img-footer         img-footer          img-footer"
                         "footer             footer            footer";
     background-position: center;
     background-attachment: fixed;
@@ -592,20 +603,9 @@ h1{
     padding-top: 10%;
     padding-bottom: 5%;
   }
-  .subtitle-tech {
-    font-size: 180%;
-    padding: 5%;
-  }
+  
   .icons {
     width: 26%;
-  }
-  .container .web{
-    padding: 2% 10% 7% 10%;
-    background-color: rgb(255, 70, 193);
-    height: 70vh;
-  }
-  .container .s-skills{
-    height: 50vh;
   }
   .container .title3{
     font-size: 140%;
@@ -642,9 +642,38 @@ h1{
     background: rgb(255, 245, 252);
   }
   .container .footer{
-    height: 35vw;
+    height: 80vw;
     padding: 5%;
   
+  }
+  .icons-contact {
+    padding: 5%;
+  }
+  .icons-contact-web {
+    width: 30px;
+    padding: 1%;
+  }
+  .icons-contact-social {
+    width: 50px;
+    padding: 5%;
+  }
+  .mail-phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    align-items: center;
+    padding-top: 3%;
+  }
+  .name-footer {
+    color: rgb(255, 255, 255);
+    font-size: 250%;
+    padding-bottom: 2%;
+  }
+  .text-service {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 60%;
   }
   .name-footer {
     font-size: 150%;
