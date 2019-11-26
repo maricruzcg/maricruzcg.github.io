@@ -9,33 +9,32 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
     <section class="container">
 
         <header class="header">
-            <section>
+            <!-- <section>
                 <a href="#home"><img class="logo-mc"src="assets/icons/logo-55.png" alt="logo"></a>
-            </section>
-            
-            <section class="menu-bg"></section>
+            </section> -->
 
-            <!-- Hamburger Menu -->
-            <a class="mcbutton">
-                <b></b>
-                <b></b>
-                <b></b>
-            </a>
+            <nav>
+                <div class="container2">
+                    <input id="responsive-menu" type="checkbox">
+                    <label for="responsive-menu">Menú<span id="menu-icon"></span></label>
+                    <div id="overlay"></div>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#aboutme">Acerca de mí</a></li>
+                        <li><a href="#skills">Habilidades</a></li>
+                        <li><a href="#proyects">Proyectos</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
 
-            <nav class="menu-items">
-                <ul>
-                    <li><a class="menu-links" href="#home">Inicio</a></li>
-                    <li><a class="menu-links" href="#aboutme">Acerca de mí</a></li>
-                    <li><a class="menu-links" href="#skills">Habilidades</a></li>
-                    <li><a class="menu-links" href="#proyects">Proyectos</a></li>
-                    <li><a class="menu-links" href="#contact">Contacto</a></li>
-                </ul>
+                </div>
             </nav>
+
         </header>
     
         <section id="home" class="welcome">
@@ -52,15 +51,16 @@
             <h3 class="greeting">¡Hola, soy Maricruz!</h3>
 
             <section class="text-me">
-                <p>Diseñadora gráfica Sr. con más de 7 años de experiencia. En una búsqueda por mantenerme 
-                    siempre actualizada decidí prepararme como <span>Front End Developer</span>, además he adquirido 
-                    conocimientos sobre UX. <br> <br> Tengo la firme idea de que el diseño y 
-                    la tecnología son necesarios para tener productos de calidad, que no solo que sean 
-                    atractivos, sino que sean funcionales y que estén pensados para el usuario. 
-                        <br> <br>
-                        Me apasiona el diseño, la ilustración y crear sitios web interactivos.
-                         Disfruto resolver problemas dando soluciones creativas, me encanta explorar 
-                         diferentes áreas de conocimiento y tengo un gran interés por las nuevas tecnologías.   </p>
+                <p> <b>Diseñadora gráfica</b> con más de 7 años de experiencia. En una búsqueda por mantenerme 
+                    siempre actualizada decidí prepararme como <b>Front End Developer</b>, además he adquirido 
+                    conocimientos sobre <b>UX</b>. 
+                    <br> <br> Tengo la firme idea de que el diseño y 
+                    la tecnología son necesarios para tener productos de calidad, <i>que no solo que sean 
+                            atractivos, sino que sean funcionales y que estén pensados para el usuario.</i> 
+                    <br> <br>
+                    Me apasiona el diseño, la ilustración y crear sitios web interactivos.
+                    Disfruto resolver problemas dando soluciones creativas, explorar 
+                    diferentes áreas de conocimiento y tengo un gran interés por las nuevas tecnologías.   </p>
 
                     <a target="_blank" href="assets/docs/cv-maricruzcarmona.pdf" class="cv">VER CV</a>
             </section>

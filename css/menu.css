@@ -1,0 +1,126 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+.container2 {
+    margin: 0 auto;
+    max-width: 80em;
+    font-family: 'Quicksand', sans-serif;
+}
+.screen-reader-text {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+}
+/* navegacion */
+nav {
+    background: rgba(255, 255, 255, 0.8);
+    color: rgb(102, 57, 201);
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+/* input */
+nav input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+/* label */
+nav label {
+    cursor: pointer;
+    display: block;
+    padding: 1.5em;
+}
+/* hamburger icon */
+#menu-icon,
+#menu-icon:before,
+#menu-icon:after {
+    background: rgb(102, 57, 201);
+    border-radius: 1em;
+    height: 0.19em;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+#menu-icon {
+    display: inline-block;
+    margin: 1em 0;
+    max-width: 2em;
+    position: relative;
+}
+nav label #menu-icon {
+    float: right;
+}
+#menu-icon:before,
+#menu-icon:after {
+    content: '';
+    left: 0;
+    position: absolute;
+}
+#menu-icon:before {
+    top: -0.6em;
+}
+#menu-icon:after {
+    bottom: -0.6em;
+}
+/* close icon */
+nav input[type=checkbox]:checked + label #menu-icon {
+    background: transparent;
+}
+nav input[type=checkbox]:checked +
+label #menu-icon:before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+nav input[type=checkbox]:checked +
+label #menu-icon:after {
+    top: 0;
+    transform: rotate(45deg);
+}
+/* menu overlay */
+nav input :checked ~ #overlay {
+    background: #e5e5e5;
+    bottom: 0;
+    left: 0;
+    height: 100hv;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+}
+/* list */
+nav ul {
+    font-size: 1.5em;
+    list-style: none;
+    margin: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    height: 100vh;
+    line-height: 3em;
+}
+nav input:checked ~ ul {
+    margin: 1em;
+    max-height: inherit;
+    opacity: 1;
+}
+nav ul > li {
+    margin: 0.5em 0;
+}
+nav ul a {
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+}
+nav ul a:hover {
+    color: rgb(102, 57, 201);
+}
+
