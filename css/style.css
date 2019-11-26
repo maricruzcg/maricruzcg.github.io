@@ -5,7 +5,7 @@
 }
 /* -------------------------------Hamburger Menu -------------------------------------*/
 
-.mcbutton{
+/* .mcbutton{
   position: fixed;
   top: 12%;
   left: 92%;
@@ -32,10 +32,10 @@
 }
 .mcbutton b:nth-child(3){
   top: 100%;
-}
+} */
 
 /* ---------------------------------------------Elementos del menu -----------------------------*/
-.menu-items{
+/* .menu-items{
   position: fixed;
   background-color: rgba(255, 255, 255, .9);
   z-index: 3;
@@ -50,7 +50,7 @@
 }
 .menu-items.is-active{
   top: 0;
-}
+} */
 /* ----------------------------Grid Css---------------------------- */
 .container{
   width: 100%;
@@ -141,17 +141,18 @@
   /* background: darkgreen; */
   font-size: 180%;
   font-weight: 550;
+  padding-bottom: 5%;
 }
 .container .text-me{
   grid-area: text-me;
   /* display: inline-flex; */
   align-items: center;
   justify-content: center;
-  padding-right: 15%;
-  padding-left: 15%;
+  padding-right: 18%;
+  padding-left: 18%;
   color: rgb(114, 114, 114);
   font-size: 105%;
-  line-height: 130%;
+  line-height: 160%;
   /* background: chartreuse; */
 }
 .cv{
@@ -182,9 +183,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 150%;
+  font-size: 180%;
   font-family: 'Great Vibes', cursive;
-  color: rgb(161, 161, 161);
+  color: rgb(5, 19, 39);
   padding: 6%;
   font-style: italic;
 }
@@ -204,9 +205,7 @@
   grid-area: web;
   text-align: center;
   padding: 2% 10% 8% 10%;
-  /* background-color: rgb(230, 105, 177); */
-  
-  background: rgb(255, 153, 201);
+  background: rgb(206, 194, 233);
 }
 
 .container .s-skills{
@@ -327,7 +326,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: rgb(255, 249, 253);
+  background: rgb(247, 245, 255);
 }
 .container .info-mesereando{
   grid-area: info-mesereando;
@@ -338,7 +337,7 @@
   padding-right: 6%;
   color: rgb(114, 114, 114);
   font-size: 105%;
-  background: rgb(253, 238, 249);
+  background: rgb(239, 234, 255);
 }
 .container .proyect3{
   grid-area: proyect3;
@@ -363,7 +362,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: rgb(255, 249, 253);
+  background: rgb(247, 245, 255);
 }
 .container .info-weencrypt{
   grid-area: info-weencrypt;
@@ -374,7 +373,7 @@
   padding-left: 20%;
   color: rgb(114, 114, 114);
   font-size: 105%;
-  background: rgb(253, 238, 249);
+  background: rgb(239, 234, 255);
 }
 .container .img-footer{
   grid-area: img-footer;
@@ -389,7 +388,7 @@
 .container .footer{
   grid-area: footer;
   background-color: rgb(102, 57, 201);
-  height: 12vw;
+  height: 30vw;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -405,11 +404,11 @@
   padding: 5%;
 }
 .icons-contact-web {
-  width: 30px;
+  width: 60px;
   padding: 1%;
 }
 .icons-contact-social {
-  width: 50px;
+  width: 100px;
   padding: 2%;
 }
 .mail-phone{
@@ -450,9 +449,9 @@ h1{
     grid-template-areas:"header             header            header"
                         "welcome            welcome           welcome"
                         "title1             title1            title1"
-                        "photo              phrase            phrase"
+                        "phrase             phrase            phrase"
                         "photo              greeting          greeting"
-                        "photo              text-me           text-me"
+                        "text-me            text-me           text-me"
                         "title2             title2            title2"
                         "web                web               web"   
                         "s-skills           s-skills          s-skills"
@@ -485,9 +484,13 @@ h1{
   .container .photo{
     padding-left: 10%;
     padding-top: 5%;
+    align-items: center;
   }
   .container .text-me{
     padding-bottom: 25%;
+    padding-top: 0;
+    padding-left: 8%;
+    padding-right: 8%;
   }
   .photo-perfil {
     width: 100%;
@@ -526,7 +529,7 @@ h1{
     padding: 5%;
   }
   .container .footer{
-    height: 25vw;
+    height: 40vw;
     padding: 5%;
   
   }
@@ -583,8 +586,16 @@ h1{
     padding-left: 10%;
     padding-bottom: 0%;
   }
+  .container .phrase {
+    text-align: center;
+  }
   .container .text-me{
     padding-bottom: 25%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 95%;
+    text-align: center;
+    line-height: 150%;
   }
   .photo-perfil {
     width: 50%;
@@ -626,28 +637,28 @@ h1{
   }
   .container .info-poke{
     padding: 7%;
-    background: rgb(255, 245, 252);
+    background: rgb(239, 234, 255);
   }
   .container .proyect2{
     background: rgb(255, 255, 255);
   }
   .container .info-mesereando{
     padding: 7%;
-    background: rgb(255, 245, 252);
+    background: rgb(239, 234, 255);
   }
     .container .info-fitclub{
     padding: 7%;
-    background: rgb(255, 245, 252);
+    background: rgb(239, 234, 255);
   }
   .container .proyect4{
     background: rgb(255, 255, 255);
   }
   .container .info-weencrypt{
     padding: 7%;
-    background: rgb(255, 245, 252);
+    background: rgb(239, 234, 255);
   }
   .container .footer{
-    height: 80vw;
+    height: 70vw;
     padding: 5%;
   
   }
@@ -655,11 +666,11 @@ h1{
     padding: 5%;
   }
   .icons-contact-web {
-    width: 30px;
+    width: 40px;
     padding: 1%;
   }
   .icons-contact-social {
-    width: 50px;
+    width: 80px;
     padding: 5%;
   }
   .mail-phone{
@@ -694,26 +705,26 @@ h1{
     margin-bottom: 10px;
     
   } */
-    header nav ul {
+    /* header nav ul {
       width: 100%;
       list-style: none;
       overflow: hidden;
     }
       header nav ul li{
-        /* display: block; */
+       
         padding-top: 40px;
         text-align: center;
         font-size: 130%;
       }
         header nav ul li a{
-          /* display: block; */
+          
           padding: 10px;
           color: #141D38;
           text-decoration: none;
           font-weight: normal;
           transition: all 0.4s linear;
           border-radius: 5px;
-        }
+        } */
         /* header nav ul li a:hover {
           background: #EDF4FF;
         } */
