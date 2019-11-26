@@ -87,7 +87,12 @@
   grid-area: header;
   /* padding: 3%; */
 }
-
+.logo-mc {
+  width: 5%;
+  position: absolute;
+  top: 5%;
+  right: 92%;
+}
 .container .welcome {
   grid-area: welcome;
   display: grid;
@@ -146,6 +151,7 @@
   padding-left: 15%;
   color: rgb(114, 114, 114);
   font-size: 105%;
+  line-height: 130%;
   /* background: chartreuse; */
 }
 .cv{
