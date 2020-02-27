@@ -68,9 +68,9 @@
                         "s-skills           s-skills            s-skills"
                         "title3             title3              title3"
                         "proyect1           proyect1            info-poke"
-                        "info-mesereando    proyect2            proyect2"
+                        "proyect2           proyect2            info-mesereando"
                         "proyect3           proyect3            info-fitclub"
-                        "info-weencrypt     proyect4            proyect4"
+                        "proyect4           proyect4            info-weencrypt"
                         "img-footer         img-footer          img-footer"
                         "footer             footer              footer";
 
@@ -137,9 +137,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(41, 125, 252);
-  /* background: darkgreen; */
-  font-size: 180%;
+  text-align: center;
+  color: rgb(121, 205, 255);
+  font-size: 280%;
   font-weight: 550;
   padding-bottom: 5%;
 }
@@ -163,7 +163,7 @@
   justify-content: center;
   color: rgb(114, 114, 114);
   background-color: #ffffff;
-  border: 1px solid rgb(41, 125, 252);
+  border: 1px solid rgb(121, 205, 255);
   padding: 1%;
   margin-top: 8%;
   width: 15%;
@@ -175,7 +175,7 @@
   transform: scale(1.15);
   border: 0px;
   /* background-color: rgb(152, 197, 231); */
-  color:rgb(41, 125, 252);
+  color:rgb(121, 205, 255);
   cursor: pointer;
 }
 .container .phrase{
@@ -218,13 +218,13 @@
 
 .subtitle-tech {
   color: rgb(255, 255, 255);
-  font-size: 130%;
+  font-size: 150%;
   padding: 5%;
   
 }
 .subtitle {
   color: rgb(114, 114, 114);
-  font-size: 130%;
+  font-size: 150%;
   padding: 5%;
   
 }
@@ -245,11 +245,11 @@
   /* background: crimson; */
 }
 .photo-proyect {
-  height: 100vh;
+  height: 90vh;
   padding: 5%;
 }
 .title-proyects {
-  color: rgb(41, 125, 252);
+  color: rgb(121, 205, 255);
   font-size: 230%;
   font-weight: 500;
   padding-bottom: 2%;
@@ -262,7 +262,7 @@
   justify-content: center;
   color: rgb(114, 114, 114);
   background-color: transparent;
-  border: 1px solid rgb(41, 125, 252);
+  border: 1px solid rgb(121, 205, 255);
   padding: 2%;
   margin-top: 10%;
   width: 30%;
@@ -274,7 +274,7 @@
   transform: scale(1.15);
   border: 0px;
   /* background-color: rgb(152, 197, 231); */
-  color:rgb(41, 125, 252);
+  color:rgb(121, 205, 255);
   cursor: pointer;
 }
 .code {
@@ -285,7 +285,7 @@
   justify-content: center;
   color: rgb(114, 114, 114);
   background-color: transparent;
-  border: 1px solid rgb(41, 125, 252);
+  border: 1px solid rgb(121, 205, 255);
   padding: 2%;
   margin-top: 10%;
   width: 30%;
@@ -297,7 +297,7 @@
   transform: scale(1.15);
   border: 0px;
   /* background-color: rgb(152, 197, 231); */
-  color:rgb(41, 125, 252);
+  color:rgb(121, 205, 255);
   cursor: pointer;
 }
 .proyect-tools {
@@ -316,7 +316,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 20%;
+  padding-right: 30%;
   color: rgb(114, 114, 114);
   font-size: 105%;
 }
@@ -326,18 +326,18 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: rgb(247, 245, 255);
+  /* background: rgb(247, 245, 255); */
 }
 .container .info-mesereando{
   grid-area: info-mesereando;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 20%;
-  padding-right: 6%;
+  /* padding-left: 20%; */
+  padding-right: 30%;
   color: rgb(114, 114, 114);
   font-size: 105%;
-  background: rgb(239, 234, 255);
+  /* background: rgb(239, 234, 255); */
 }
 .container .proyect3{
   grid-area: proyect3;
@@ -352,7 +352,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 20%;
+  padding-right: 30%;
   color: rgb(114, 114, 114);
   font-size: 105%;
 }
@@ -362,18 +362,18 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: rgb(247, 245, 255);
+  /* background: rgb(247, 245, 255); */
 }
 .container .info-weencrypt{
   grid-area: info-weencrypt;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 6%;
-  padding-left: 20%;
+  padding-right: 30%;
+  /* padding-left: 20%; */
   color: rgb(114, 114, 114);
   font-size: 105%;
-  background: rgb(239, 234, 255);
+  /* background: rgb(239, 234, 255); */
 }
 .container .img-footer{
   grid-area: img-footer;
@@ -387,8 +387,8 @@
 }
 .container .footer{
   grid-area: footer;
-  background-color: rgb(102, 57, 201);
-  height: 30vw;
+  background-color: rgb(206, 194, 233);
+  height: 20vw;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -424,7 +424,7 @@
   padding-bottom: 2%;
 }
 .text-service {
-  color: #ffffff;
+  color: #4B4063;
   font-weight: bold;
 }
 /* -----------------Estilos desktop -----------*/
@@ -450,16 +450,17 @@ h1{
                         "welcome            welcome           welcome"
                         "title1             title1            title1"
                         "phrase             phrase            phrase"
-                        "photo              greeting          greeting"
+                        "photo              photo             photo"
+                        "greeting              greeting          greeting"
                         "text-me            text-me           text-me"
                         "title2             title2            title2"
                         "web                web               web"   
                         "s-skills           s-skills          s-skills"
                         "title3             title3            title3"
-                        "proyect1           info-poke         info-poke"
-                        "info-mesereando    info-mesereando   proyect2"
-                        "proyect3           info-fitclub      info-fitclub"
-                        "info-weencrypt     info-weencrypt    proyect4"
+                        "proyect1           proyect1            info-poke"
+                        "proyect2           proyect2            info-mesereando"
+                        "proyect3           proyect3            info-fitclub"
+                        "proyect4           proyect4            info-weencrypt"
                         "img-footer         img-footer          img-footer"
                         "footer             footer            footer";
     background-position: center;
@@ -629,7 +630,7 @@ h1{
     padding-bottom: 15%;
   }
   .photo-proyect {
-    height: 45vh;
+    height: 60vh;
     padding: 5%;
   }
   .title-proyects {
@@ -637,28 +638,28 @@ h1{
   }
   .container .info-poke{
     padding: 7%;
-    background: rgb(239, 234, 255);
+    background: rgb(251, 250, 255);
   }
   .container .proyect2{
     background: rgb(255, 255, 255);
   }
   .container .info-mesereando{
     padding: 7%;
-    background: rgb(239, 234, 255);
+    background: rgb(251, 250, 255);
   }
     .container .info-fitclub{
     padding: 7%;
-    background: rgb(239, 234, 255);
+    background: rgb(251, 250, 255);
   }
   .container .proyect4{
     background: rgb(255, 255, 255);
   }
   .container .info-weencrypt{
     padding: 7%;
-    background: rgb(239, 234, 255);
+    background: rgb(251, 250, 255);
   }
   .container .footer{
-    height: 100vw;
+    height: 80vw;
     padding: 5%;
   
   }
@@ -687,7 +688,7 @@ h1{
     padding-bottom: 2%;
   }
   .text-service {
-    color: #ffffff;
+    color: #4B4063;
     font-weight: bold;
     font-size: 60%;
   }
